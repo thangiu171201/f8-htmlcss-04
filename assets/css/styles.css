@@ -8,6 +8,27 @@ body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
 }
+/* Common */
+a {
+    text-decoration: none;
+}
+.btn {
+    min-width: 130px;
+    --height: 56px;
+    display: inline-block;
+    height: var(--height);
+    line-height: var(--height);
+    border-radius: 99px;
+    border: 1px solid rgb(0, 9, 88, 0.7);
+    color: #000958;
+    text-align: center;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 600;
+}
+.btn {
+    opacity: 0.8;
+}
 h1,
 h2,
 h3,
@@ -22,4 +43,42 @@ select,
 button {
     font-size: inherit;
     font-family: inherit;
+}
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+/* header */
+.header {
+    padding-top: 32px;
+    padding-bottom: 26px;
+}
+.logo {
+    cursor: pointer;
+}
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar__list {
+    display: flex;
+}
+.navbar__link,
+.header-action__link {
+    color: #5e6085;
+    font-size: 1.4rem;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 1;
+    padding: 8px 16px;
+}
+.header-action__btn {
+    --height: 50px;
+    min-width: 117px;
+}
+.navbar__link:hover {
+    text-shadow: 1px 0 0 currentColor;
+    color: #000958;
 }
