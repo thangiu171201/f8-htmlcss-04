@@ -7,6 +7,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+    background: #fffaf5;
 }
 /* Common */
 a {
@@ -26,7 +27,7 @@ a {
     font-family: Poppins;
     font-weight: 600;
 }
-.btn {
+.btn:hover {
     opacity: 0.8;
 }
 h1,
@@ -81,4 +82,59 @@ button {
 .navbar__link:hover {
     text-shadow: 1px 0 0 currentColor;
     color: #000958;
+}
+/* ======HERO===== */
+.hero {
+    margin-top: 86px;
+}
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero__img-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 388px;
+    height: 488px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #fe997b;
+    border: 3px solid #fff;
+}
+.hero__img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: inherit;
+}
+.hero__decor-img {
+    z-index: -1;
+    position: absolute;
+}
+.hero__decor-left {
+    left: -58px;
+    bottom: 10px;
+}
+.hero__decor-right {
+    top: 16px;
+    right: -44px;
+}
+.hero__img-wrap--small {
+    background: #f8a3a9;
+    width: 186px;
+    height: 244px;
+    align-self: flex-end;
+    margin-left: -24px;
+    margin-bottom: -58px;
+    border: 2px solid #f7dddf;
+}
+.hero__media {
+    display: flex;
+}
+
+.hero__img-small {
+    max-width: 100%;
+    max-height: 100%;
 }
