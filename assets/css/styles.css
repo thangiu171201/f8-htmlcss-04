@@ -9,6 +9,9 @@ body {
     font-family: "Poppins", sans-serif;
     background: #fffaf5;
 }
+:root {
+    --primary-color: #ff5b2e;
+}
 /* Common */
 a {
     text-decoration: none;
@@ -16,7 +19,9 @@ a {
 .btn {
     min-width: 130px;
     --height: 56px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     height: var(--height);
     line-height: var(--height);
     border-radius: 99px;
@@ -29,6 +34,22 @@ a {
 }
 .btn:hover {
     opacity: 0.8;
+    cursor: pointer;
+}
+.btn--primary {
+    color: #fff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
 }
 h1,
 h2,
@@ -97,6 +118,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    column-gap: 120px;
 }
 .hero__img-wrap {
     position: relative;
@@ -201,4 +223,41 @@ button {
 
 .hero-list-item:nth-of-type(2) .hero-list-item__thumb {
     background: #c6e2fa;
+}
+.hero__heading {
+    color: #000958;
+    font-size: 66px;
+    font-family: Sora;
+    font-weight: 800;
+    line-height: 76px;
+}
+.hero__desc {
+    width: 391px;
+    margin-top: 24px;
+    color: #656689;
+    font-size: 1.6rem;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.hero__row {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+}
+.hero__cta-btn {
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+    min-width: 190px;
+    --height: 60px;
+    font-size: 1.6rem;
+}
+.hero__cta-link {
+    margin-left: 24px;
+    color: #000958;
+    text-align: center;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    text-decoration: underline;
 }
